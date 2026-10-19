@@ -20,7 +20,7 @@ python -m http.server -d C:\GV\geovision\site 8000
 
 | 文件 | 内容 | 拍法 |
 |---|---|---|
-| `hero.jpg` | `01_点云_PointCloud/LAS/autzen_stadium.las` | 只导出视口；背景 `#1d1f24`；透视开；斜俯视 |
+| `hero.jpg` | `real6.ply`（发动机缸体扫描，446 万点，带法线） | 只导出视口；背景 `#1d1f24`、不显示坐标轴；透视开；点大小 2；显示 → 法线光照（原始颜色）；斜视看到四个缸孔。导出后把物体部分的亮度映射到冷钢色调（深 `#21262e` → 中 `#78859a` → 亮 `#f5f7fc`，轻度 S 曲线），背景不动 |
 | `formats.jpg` | `E57/bunnyDouble.e57` + `02_Mesh网格/STL/stanford_bunny.stl` + `03_数模_CAD/IGES/impeller.igs` | 整窗；目录树里三种类型；斜视 |
 | `bigcloud.jpg` | 先开 `03_数模_CAD/STEP/as1-ac-214.stp`，再后台打开 autzen | 整窗；进度条约一半时截 |
 | `cad.jpg` | `03_数模_CAD/STEP/as1-ac-214.stp` | 只导出视口；背景 `#1d1f24`；带边线着色；斜视 |
